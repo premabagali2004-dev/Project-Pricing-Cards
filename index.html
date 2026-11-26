@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore flexible SaaS pricing plans for individuals, teams, and growing businesses.">
+  <title>Planify — Simple, transparent pricing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="page-shell">
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Planify home">
+        <span class="brand-mark">P</span><span>planify</span>
+      </a>
+      <a class="nav-link" href="#plans">Explore plans <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <section class="hero" id="plans">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> PRICING THAT SCALES WITH YOU</div>
+      <h1>Invest in your next<br><span>big idea.</span></h1>
+      <p class="hero-copy">Simple, transparent plans designed to help you do your best work. No hidden fees. Just the tools you need to grow.</p>
+
+      <div class="billing-area">
+        <div class="billing-control" role="group" aria-label="Choose billing cycle">
+          <button class="billing-option active" id="monthlyBtn" type="button" aria-pressed="true">Monthly</button>
+          <button class="billing-option" id="yearlyBtn" type="button" aria-pressed="false">Yearly <span class="save-pill">-20%</span></button>
+        </div>
+        <p class="billing-note" id="billingNote">Billed monthly · Cancel anytime</p>
+      </div>
+    </section>
+
+    <section class="pricing-grid" aria-label="Pricing plans">
+      <article class="pricing-card" data-plan="starter">
+        <div class="card-top">
+          <div class="plan-icon starter-icon" aria-hidden="true">✦</div>
+          <h2>Starter</h2>
+          <p class="plan-description">Everything you need to get moving.</p>
+        </div>
+        <div class="price-wrap">
+          <div class="price-line"><span class="currency">$</span><span class="price" data-monthly="12" data-yearly="9.60">12</span><span class="period">/ month</span></div>
+          <p class="billing-detail">Billed monthly</p>
+        </div>
+        <a class="plan-button button-light" href="mailto:hello@planify.example?subject=Starter%20plan">Get started <span>→</span></a>
+        <div class="feature-heading">WHAT'S INCLUDED</div>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Up to 3 projects</li>
+          <li><span class="check">✓</span> 5 GB secure storage</li>
+          <li><span class="check">✓</span> Basic analytics</li>
+          <li><span class="check">✓</span> Community support</li>
+        </ul>
+        <p class="card-footnote">Great for personal projects</p>
+      </article>
+
+      <article class="pricing-card featured-card" data-plan="pro">
+        <div class="ribbon popular-ribbon">✦ MOST POPULAR</div>
+        <div class="card-top">
+          <div class="plan-icon pro-icon" aria-hidden="true">✧</div>
+          <h2>Professional</h2>
+          <p class="plan-description">More power for your best ideas.</p>
+        </div>
+        <div class="price-wrap">
+          <div class="price-line"><span class="currency">$</span><span class="price" data-monthly="29" data-yearly="23.20">29</span><span class="period">/ month</span></div>
+          <p class="billing-detail">Billed monthly</p>
+        </div>
+        <a class="plan-button button-primary" href="mailto:hello@planify.example?subject=Professional%20plan">Start free trial <span>→</span></a>
+        <div class="feature-heading">EVERYTHING IN STARTER, PLUS</div>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Unlimited projects</li>
+          <li><span class="check">✓</span> 100 GB secure storage</li>
+          <li><span class="check">✓</span> Advanced analytics</li>
+          <li><span class="check">✓</span> Priority support</li>
+          <li><span class="check">✓</span> Team collaboration</li>
+        </ul>
+        <p class="card-footnote">For teams ready to level up</p>
+      </article>
+
+      <article class="pricing-card value-card" data-plan="business">
+        <div class="ribbon value-ribbon">BEST VALUE</div>
+        <div class="card-top">
+          <div class="plan-icon business-icon" aria-hidden="true">⬡</div>
+          <h2>Business</h2>
+          <p class="plan-description">Serious tools for ambitious teams.</p>
+        </div>
+        <div class="price-wrap">
+          <div class="price-line"><span class="currency">$</span><span class="price" data-monthly="59" data-yearly="47.20">59</span><span class="period">/ month</span></div>
+          <p class="billing-detail">Billed monthly</p>
+        </div>
+        <a class="plan-button button-light" href="mailto:hello@planify.example?subject=Business%20plan">Talk to sales <span>→</span></a>
+        <div class="feature-heading">EVERYTHING IN PRO, PLUS</div>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Unlimited team members</li>
+          <li><span class="check">✓</span> Unlimited storage</li>
+          <li><span class="check">✓</span> Custom reports</li>
+          <li><span class="check">✓</span> 24/7 dedicated support</li>
+          <li><span class="check">✓</span> Advanced security</li>
+        </ul>
+        <p class="card-footnote">For businesses that mean business</p>
+      </article>
+    </section>
+
+    <section class="trust-row" aria-label="Customer reassurance">
+      <div><span class="trust-icon">✓</span> No setup fees</div>
+      <div><span class="trust-icon">✓</span> Cancel anytime</div>
+      <div><span class="trust-icon">✓</span> Secure payments</div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Planify. Made for what's next.</span>
+      <a href="mailto:hello@planify.example">Questions? Talk to us</a>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
